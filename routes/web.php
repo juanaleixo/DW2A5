@@ -13,21 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\EventController;
 
-Route::get('/', [EventController::class, 'index']);
-Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
-Route::get('/events/{id}', [EventController::class, 'show']);
-Route::post('/events', [EventController::class, 'store']);
-Route::delete('/events/{id}', [EventController::class, 'destroy'])->middleware('auth');
-Route::get('events/edit/{id}',[EventController::class, 'edit'])->middleware('auth');
-Route::put('/events/update/{id}', [EventController::class, 'update'])->middleware('auth');
+use App\Http\Controllers\EmployeeController;
+
+Route::get('/', [EmployeeController::class, 'index']);
+Route::get('/employees/create', [EmployeeController::class, 'create'])->middleware('auth');
+Route::get('/employees/{id}', [EmployeeController::class, 'show']);
+Route::post('/employees', [EmployeeController::class, 'store']);
+Route::delete('/employees/{id}', [EmployeeController::class, 'destroy'])->middleware('auth');
+Route::get('employees/edit/{id}',[EmployeeController::class, 'edit'])->middleware('auth');
+Route::put('/employees/update/{id}', [EmployeeController::class, 'update'])->middleware('auth');
 
 
 
 
-Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
+Route::get('/dashboard', [EmployeeController::class, 'dashboard'])->middleware('auth');
 
-Route::post('/events/join/{id}', [EventController::class,'joinEvent'])->middleware();
+Route::post('/employees/join/{id}', [EmployeeController::class,'joinEvent'])->middleware();
 
-Route::delete('/events/leave/{id}', [EventController::class,'leaveEvent'])->middleware();
+Route::delete('/employees/leave/{id}', [EmployeeController::class,'leaveEvent'])->middleware();

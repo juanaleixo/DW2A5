@@ -96,17 +96,17 @@ header{
     margin: 0 auto;
 }
 
-/*Events list*/
+/*Employee list*/
 
-#events-container{
+#employees-container{
     padding: 50px;
 }
 
-#events-container h2{
+#employees-container h2{
     margin-bottom: 10px;
 }
 
-#events-container .subtitle{
+#employees-container .subtitle{
     color:#757575;
     margin-bottom: 30px;
 }
@@ -115,7 +115,7 @@ header{
     display: flex;
 }
 
-#events-container .card {
+#employees-container .card {
     flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
@@ -123,49 +123,49 @@ header{
     margin: .5%;
 }
 
-#events-container img{
+#employees-container img{
     object-fit: cover;
     max-height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.card .card-date{
-    font-size: 12px;
-    color: #CCC;
-}
-
-.card .card-title{
+.card .card-name{
     color: #212121;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 30px;
 }
 
-.card-participants{
+.card .card-cargo{
+    font-size: 12px;
+    color: rgb(92, 92, 92);
+}
+
+.card-cpf{
     font-size: 14px;
     color: #757575;
 }
 
 
 
-/* Event create page */
 
-#event-create-container{
+/* employee create page */
+
+#employee-create-container{
     padding: 30px;
 }
 
-#event-create-container label{
+#employee-create-container label{
     font-weight: bold;
 }
 
-#event-create-container input,
-#event-create-container select,
-#event-create-container textarea {
+#employee-create-container input,
+#employee-create-container select,
+#employee-create-container textarea {
     font-size: 12px;
 }
 
-/*Event page*/
+/*employee page*/
 
 #image-container,
 #info-container{
@@ -199,7 +199,7 @@ header{
     margin-right: 5px;
 }
 
-#info-container #event-submit{
+#info-container #employee-submit{
     margin: 20px 0;
 }
 
@@ -217,11 +217,11 @@ header{
     margin-top: 30px;
 }
 
-.dashboard-events-container th{
+.dashboard-employees-container th{
     width: 25%;
 }
 
-.dashboard-events-container form{
+.dashboard-employees-container form{
     display: inline-block;
 }
 
