@@ -1,0 +1,249 @@
+*{
+    font-family: 'Roboto';
+}
+
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.row{
+    margin: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.btn-primary{
+    background-color:#4072f2;
+    border: 2px solid #234291;
+}
+
+.btn-primary:hover{
+    background-color: #234291;
+    border-color: #234291;
+}
+
+.msg{
+    background-color: lightgreen;
+    color: green;
+    border: 1px solid whitesmoke;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+#info-container .already-joined-message{
+    margin: 15px 0;
+    color: #4072f2;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 275px;
+}
+
+/*Navbar*/
+
+#navbar img {
+    width: 50px;
+}
+
+#navbar{
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 5px 0;
+}
+
+#navbar a{
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover{
+    color: #4072f2;
+}
+
+
+
+
+/*Search Container*/
+
+#search-container{
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1{
+    color:#4072f2;
+    margin-bottom: 30px;
+    font-weight:900;
+}
+
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*Employee list*/
+
+#employees-container{
+    padding: 50px;
+}
+
+#employees-container h2{
+    margin-bottom: 10px;
+}
+
+#employees-container .subtitle{
+    color:#757575;
+    margin-bottom: 30px;
+}
+
+#cards-container{
+    display: flex;
+}
+
+#employees-container .card {
+    flex: 1 1 24%;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: .5%;
+}
+
+#employees-container img{
+    object-fit: cover;
+    max-height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-name{
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card .card-cargo{
+    font-size: 12px;
+    color: rgb(92, 92, 92);
+}
+
+.card-cpf{
+    font-size: 14px;
+    color: #757575;
+}
+
+
+
+
+/* employee create page */
+
+#employee-create-container{
+    padding: 30px;
+}
+
+#employee-create-container label{
+    font-weight: bold;
+}
+
+#employee-create-container input,
+#employee-create-container select,
+#employee-create-container textarea {
+    font-size: 12px;
+}
+
+/*employee page*/
+
+#image-container,
+#info-container{
+    margin-top: 30px;
+}
+
+#image-container img{
+    border: radius 10px;
+}
+
+#image-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p{
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon{
+    font-size: 20px;
+    color:#4072f2;
+    margin-right: 5px;
+}
+
+#info-container #employee-submit{
+    margin: 20px 0;
+}
+
+#items-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li{
+    display: flex;
+}
+/*Dashboard*/
+.dashboard-title-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-employees-container th{
+    width: 25%;
+}
+
+.dashboard-employees-container form{
+    display: inline-block;
+}
+
+/*Edit Page*/
+
+.image-preview{
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+/*footer*/
+footer{
+    text-align: center;
+    background-color: #757575;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
